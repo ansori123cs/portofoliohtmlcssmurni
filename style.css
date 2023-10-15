@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gabarito', sans-serif;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.logo {
+  font-size: 30px;
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: black;
+}
+.home {
+  height: 100vh;
+  background: linear-gradient(-90deg, gray 70%, white 30%);
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+.image {
+  width: 500px;
+  height: 500px;
+}
+.image img {
+  width: 400px;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 75px;
+  border: 15px solid white;
+  border-radius: 50%;
+  outline: 15px solid gray;
+}
+.home-content {
+  max-width: 600px;
+  text-align: right;
+}
+.home-content h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+.home-content h3 {
+  font-size: 35px;
+  line-height: 1.2;
+  color: gray;
+  -webkit-text-stroke: 0.9px black;
+  margin-bottom: 20px;
+}
+.home-icons {
+  margin-top: 20px;
+  margin-top: 20px;
+}
+.home-icons a {
+  color: white;
+  -webkit-text-stroke: 0.1px black;
+  margin: 25px 20px 20px 0;
+}
+.button {
+  position: relative;
+  font-size: 20px;
+  top: 20px;
+  right: 40px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 25px;
+  transition: 0.5s;
+  font-weight: 600;
+}
+.button:hover {
+  background: black;
+  color: white;
+}
+#project {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.slide-wrapper {
+  position: relative;
+  border: 5px solid gray;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+.title {
+  margin-bottom: 20px;
+}
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
