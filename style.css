@@ -98,14 +98,26 @@
   padding-left: 3rem;
   padding-right: 3rem;
 }
+.project {
+  background: linear-gradient(-90deg, white 70%, gray 30%);
+}
 .slide-wrapper {
   position: relative;
-  border: 5px solid gray;
+  outline: 15px solid gray;
+  border: 15px solid white;
   max-width: 48rem;
   margin: 0 auto;
 }
+.description {
+  position: absolute;
+  margin-top: 20%;
+  padding: 5%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
 .title {
   margin-bottom: 20px;
+  color: white;
 }
 .slider {
   display: flex;
